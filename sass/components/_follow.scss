@@ -1,0 +1,112 @@
+.follow {
+  display: block;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--background-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &-mail {
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    color: var(--background-color);
+    background-color: inherit;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 159px;
+      margin-right: 159px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.follow-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding-left: 28px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: left;
+
+  color: var(--background-color);
+  background-color: var(--color-button);
+  border: transparent;
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-color-button);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 150px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 284px;
+    margin-right: 284px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
+
+.follow-icon {
+  position: absolute;
+  margin-left: 10px;
+  fill: var(--background-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--background-color);
+    background-color: var(--color-button);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

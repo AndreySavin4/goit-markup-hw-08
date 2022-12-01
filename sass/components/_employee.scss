@@ -1,0 +1,38 @@
+.employee__icon {
+  @media screen and (max-width: 1199px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+.employee {
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__name {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--main-color);
+  }
+}
+.--mb10 {
+  margin-bottom: 10px;
+}
+
+.employee__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--second-color);
+
+  &--mb16 {
+    margin-bottom: 16px;
+  }
+}

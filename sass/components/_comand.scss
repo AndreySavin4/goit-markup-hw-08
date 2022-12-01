@@ -1,0 +1,17 @@
+.comand {
+  background-color: var(--background-color-team);
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--main-color);
+  }
+}
+.--mb50 {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}

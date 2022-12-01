@@ -1,0 +1,27 @@
+.work {
+  padding-top: 0;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--main-color);
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+// ul and li on WORK//
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}

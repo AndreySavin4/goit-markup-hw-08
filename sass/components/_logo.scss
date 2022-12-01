@@ -1,0 +1,26 @@
+.header-logo {
+  display: block;
+  margin-right: 88px;
+
+  @media screen and (max-width: 1199px) {
+    width: 134px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+
+    width: 145px;
+  }
+}
+
+.logo-first {
+  color: var(--color-button);
+}
+
+.logo-second {
+  color: #000000;
+
+  &-color {
+    color: var(--background-color);
+  }
+}
