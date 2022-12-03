@@ -146,19 +146,43 @@
           <h2 class="work__title --mb50">Чим ми займаємося</h2>
           <ul class="works">
             <li class="work__item">
-              <img src="./images/img.jpg" alt="Робота" width="370" />
+              <img
+                src="./images/works/img1x.jpg"
+                alt="Робота"
+                width="370"
+                srcset="
+                  ./images/works/img1x.jpg 1x,
+                  ./images/works/img2x.jpg 2x
+                "
+              />
               <div class="ideas">
                 <p class="ideas__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="work__item">
-              <img src="./images/img1.jpg" alt="Тестування" width="370" />
+              <img
+                src="./images/works/img11x.jpg"
+                alt="Тестування"
+                width="370"
+                srcset="
+                  ./images/works/img11x.jpg 1x,
+                  ./images/works/img12x.jpg 2x
+                "
+              />
               <div class="ideas">
                 <p class="ideas__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__item">
-              <img src="./images/img2.jpg" alt="Дизайн" width="370" />
+              <img
+                src="./images/works/img21x.jpg"
+                alt="Дизайн"
+                width="370"
+                srcset="
+                  ./images/works/img21x.jpg 1x,
+                  ./images/works/img22x.jpg 2x
+                "
+              />
               <div class="ideas">
                 <p class="ideas__text">Дизайнерські рішення</p>
               </div>
@@ -175,9 +199,15 @@
             <li class="comands__item">
               <img
                 class="employee__icon"
-                src="./images/person1.jpg"
+                src="./images/employee/sm1-270.jpg"
+                srcset="
+                  ./images/employee/sm1-270.jpg 270w,
+                  ./images/employee/ml1-354.jpg 345w,
+                  ./images/employee/bg1-450.jpg 450w
+                "
                 alt="Портрет"
                 width="270"
+                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
               />
               <div class="employee">
                 <p class="employee__name --mb10">Ігор Дем'яненко</p>
@@ -219,9 +249,15 @@
             <li class="comands__item">
               <img
                 class="employee__icon"
-                src="./images/person4.jpg"
+                src="./images/employee/sm2-270.jpg"
+                srcset="
+                  ./images/employee/sm2-270.jpg 270w,
+                  ./images/employee/ml2-354.jpg 345w,
+                  ./images/employee/bg2-450.jpg 450w
+                "
                 alt="Портрет"
                 width="270"
+                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
               />
               <div class="employee">
                 <p class="employee__name --mb10">Ольга Рєпіна</p>
@@ -263,9 +299,15 @@
             <li class="comands__item">
               <img
                 class="employee__icon"
-                src="./images/person3.jpg"
+                src="./images/employee/sm3-270.jpg"
+                srcset="
+                  ./images/employee/sm3-270.jpg 270w,
+                  ./images/employee/ml3-354.jpg 345w,
+                  ./images/employee/bg3-450.jpg 450w
+                "
                 alt="Портрет"
                 width="270"
+                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
               />
               <div class="employee">
                 <p class="employee__name --mb10">Микола Тарасов</p>
@@ -307,9 +349,15 @@
             <li class="comands__item">
               <img
                 class="employee__icon"
-                src="./images/person2.jpg"
+                src="./images/employee/sm4-270.jpg"
+                srcset="
+                  ./images/employee/sm4-270.jpg 270w,
+                  ./images/employee/ml4-354.jpg 345w,
+                  ./images/employee/bg4-450.jpg 450w
+                "
                 alt="Портрет"
                 width="270"
+                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
               />
               <div class="employee">
                 <p class="employee__name --mb10">Михайло Єрмаков</p>
@@ -522,9 +570,9 @@
             </svg>
           </label>
 
-          <label class="form-item-list" for="mail"
+          <label class="form-item-list" for="email"
             ><span class="form-item">Пошта</span>
-            <input class="form-input" type="mail" name="mail" id="mail" />
+            <input class="form-input" type="email" name="email" id="mail" />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email-form"></use>
             </svg>
