@@ -2,8 +2,14 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  padding: 32px 0;
+  padding: 21px 0;
   gap: 50px;
+
+  @media screen and (max-width: 1199px) {
+    &-link:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -11,12 +17,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
-
-  @media screen and (max-width: 1199px) {
-    &-link:not(:last-child) {
-      padding-bottom: 10px;
-    }
+    padding: 32px 0;
   }
 }
 

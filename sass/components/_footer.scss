@@ -11,11 +11,13 @@
   &__box {
     @media screen and (min-width: 768px), (max-width: 1199px) {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      margin-bottom: 60px;
     }
 
     @media screen and (max-width: 767px) {
       display: block;
+      margin-bottom: 60px;
     }
   }
 
@@ -46,6 +48,10 @@
     }
 
     @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
       margin-right: 70px;
     }
   }

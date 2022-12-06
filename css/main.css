@@ -42,7 +42,6 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -123,11 +122,6 @@ textarea:focus-visible {
 
 .address {
   font-style: normal;
-}
-@media screen and (min-width: 768px), (max-width: 1199px) {
-  .address {
-    margin-bottom: 60px;
-  }
 }
 
 .footer-list:not(:last-child) {
@@ -266,8 +260,13 @@ textarea:focus-visible {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
-  padding: 32px 0;
+  padding: 21px 0;
   gap: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts-link:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .contacts {
@@ -279,11 +278,7 @@ textarea:focus-visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .contacts-link:not(:last-child) {
-    padding-bottom: 10px;
+    padding: 32px 0;
   }
 }
 
@@ -364,8 +359,6 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/bg@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg@1x.jpg);
   }
@@ -374,6 +367,12 @@ textarea:focus-visible {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/bg@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -428,6 +427,11 @@ textarea:focus-visible {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .benefits__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits {
     display: -webkit-box;
@@ -501,7 +505,6 @@ textarea:focus-visible {
   font-weight: 400;
   line-height: 1.71;
   color: var(--second-color);
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__text {
@@ -575,10 +578,16 @@ textarea:focus-visible {
 }
 .comand__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: var(--main-color);
+}
+@media screen and (min-width: 1200px) {
+  .comand__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .--mb50 {
@@ -785,13 +794,16 @@ textarea:focus-visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer__box {
     display: block;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -822,18 +834,17 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 768px) {
   .footer-contact {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact {
     margin-right: 70px;
   }
 }
 
 .list-address:not(:last-child) {
   margin-bottom: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  .apps {
-    margin-bottom: 60px;
-  }
 }
 
 .apps__title {
@@ -903,7 +914,7 @@ textarea:focus-visible {
 }
 @media screen and (min-width: 1200px) {
   .follow {
-    margin-left: 93px;
+    margin-left: 94px;
   }
 }
 .follow-title {
@@ -979,7 +990,7 @@ textarea:focus-visible {
 }
 @media screen and (max-width: 767px) {
   .follow-button {
-    margin: 0 150px;
+    margin: 0 140px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

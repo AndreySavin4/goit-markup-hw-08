@@ -1,4 +1,10 @@
 .benefits {
+  @media screen and (max-width: 767px) {
+    &__list:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +57,6 @@
   font-weight: 400;
   line-height: 1.71;
   color: var(--second-color);
-  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     max-width: 354px;

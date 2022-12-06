@@ -147,12 +147,12 @@
           <ul class="works">
             <li class="work__item">
               <img
-                src="./images/works/img1x.jpg"
+                src="./images/works/laptop1x.jpg"
                 alt="Робота"
                 width="370"
                 srcset="
-                  ./images/works/img1x.jpg 1x,
-                  ./images/works/img2x.jpg 2x
+                  ./images/works/laptop1x.jpg 1x,
+                  ./images/works/laptop2x.jpg 2x
                 "
               />
               <div class="ideas">
@@ -161,12 +161,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/works/img11x.jpg"
+                src="./images/works/lapmob1x.jpg"
                 alt="Тестування"
                 width="370"
                 srcset="
-                  ./images/works/img11x.jpg 1x,
-                  ./images/works/img12x.jpg 2x
+                  ./images/works/lapmob1x.jpg 1x,
+                  ./images/works/lapmob2x.jpg 2x
                 "
               />
               <div class="ideas">
@@ -175,12 +175,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/works/img21x.jpg"
+                src="./images/works/design1x.jpg"
                 alt="Дизайн"
                 width="370"
                 srcset="
-                  ./images/works/img21x.jpg 1x,
-                  ./images/works/img22x.jpg 2x
+                  ./images/works/design1x.jpg 1x,
+                  ./images/works/design2x.jpg 2x
                 "
               />
               <div class="ideas">
@@ -197,18 +197,35 @@
           <h2 class="comand__title --mb50">Наша команда</h2>
           <ul class="comands">
             <li class="comands__item">
-              <img
-                class="employee__icon"
-                src="./images/employee/sm1-270.jpg"
-                srcset="
-                  ./images/employee/sm1-270.jpg 270w,
-                  ./images/employee/ml1-354.jpg 345w,
-                  ./images/employee/bg1-450.jpg 450w
-                "
-                alt="Портрет"
-                width="270"
-                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/employee/sm1-270.jpg   1x,
+                    ./images/employee/sm1-2702x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/employee/ml1-354.jpg   1x,
+                    ./images/employee/ml1-3542x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/employee/bg1-450.jpg   1x,
+                    ./images/employee/bg1-4502x.jpg 2x
+                  "
+                />
+                <img
+                  class="employee__icon"
+                  src="./images/employee/sm1-270.jpg"
+                  alt="Портрет"
+                  loading="lazy"
+                />
+              </picture>
               <div class="employee">
                 <p class="employee__name --mb10">Ігор Дем'яненко</p>
                 <p class="employee__position employee__position--mb16">
@@ -247,18 +264,35 @@
               </div>
             </li>
             <li class="comands__item">
-              <img
-                class="employee__icon"
-                src="./images/employee/sm2-270.jpg"
-                srcset="
-                  ./images/employee/sm2-270.jpg 270w,
-                  ./images/employee/ml2-354.jpg 345w,
-                  ./images/employee/bg2-450.jpg 450w
-                "
-                alt="Портрет"
-                width="270"
-                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/employee/sm2-270.jpg   1x,
+                    ./images/employee/sm2-2702x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/employee/ml2-354.jpg   1x,
+                    ./images/employee/ml2-3542x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/employee/bg2-450.jpg   1x,
+                    ./images/employee/bg2-4502x.jpg 2x
+                  "
+                />
+                <img
+                  class="employee__icon2"
+                  src="./images/employee/sm2-270.jpg"
+                  alt="Портрет"
+                  loading="lazy"
+                />
+              </picture>
               <div class="employee">
                 <p class="employee__name --mb10">Ольга Рєпіна</p>
                 <p class="employee__position employee__position--mb16">
@@ -297,18 +331,35 @@
               </div>
             </li>
             <li class="comands__item">
-              <img
-                class="employee__icon"
-                src="./images/employee/sm3-270.jpg"
-                srcset="
-                  ./images/employee/sm3-270.jpg 270w,
-                  ./images/employee/ml3-354.jpg 345w,
-                  ./images/employee/bg3-450.jpg 450w
-                "
-                alt="Портрет"
-                width="270"
-                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/employee/sm3-270.jpg   1x,
+                    ./images/employee/sm3-2702x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/employee/ml3-354.jpg   1x,
+                    ./images/employee/ml3-3542x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/employee/bg3-450.jpg   1x,
+                    ./images/employee/bg3-4502x.jpg 2x
+                  "
+                />
+                <img
+                  class="employee__icon"
+                  src="./images/employee/sm3-270.jpg"
+                  alt="Портрет"
+                  loading="lazy"
+                />
+              </picture>
               <div class="employee">
                 <p class="employee__name --mb10">Микола Тарасов</p>
                 <p class="employee__position employee__position--mb16">
@@ -347,18 +398,35 @@
               </div>
             </li>
             <li class="comands__item">
-              <img
-                class="employee__icon"
-                src="./images/employee/sm4-270.jpg"
-                srcset="
-                  ./images/employee/sm4-270.jpg 270w,
-                  ./images/employee/ml4-354.jpg 345w,
-                  ./images/employee/bg4-450.jpg 450w
-                "
-                alt="Портрет"
-                width="270"
-                sizes="(min-width:1200px) 270px,(min-width:768px) 345px,(min-width:480px) 450px, 100vw"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/employee/sm4-270.jpg   1x,
+                    ./images/employee/sm4-2702x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/employee/ml4-354.jpg   1x,
+                    ./images/employee/ml4-3542x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/employee/bg4-450.jpg   1x,
+                    ./images/employee/bg4-4502x.jpg 2x
+                  "
+                />
+                <img
+                  class="employee__icon"
+                  src="./images/employee/sm4-270.jpg"
+                  alt="Портрет"
+                  loading="lazy"
+                />
+              </picture>
               <div class="employee">
                 <p class="employee__name --mb10">Михайло Єрмаков</p>
                 <p class="employee__position employee__position--mb16">

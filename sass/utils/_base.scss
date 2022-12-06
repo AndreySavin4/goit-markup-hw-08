@@ -29,8 +29,6 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 
-  outline: 2px solid tomato;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -104,10 +102,6 @@ textarea:focus-visible {
 
 .address {
   font-style: normal;
-
-  @media screen and (min-width: 768px), (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer-list:not(:last-child) {
